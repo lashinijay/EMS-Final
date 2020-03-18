@@ -1,0 +1,31 @@
+<div>
+<!-- <h1>List of All the Employees </h1> -->
+<div class="panel panel-warning">
+  <div class ="panel-heading">
+    <h3 class="panel-title">Employees Details</h3>
+  </div>
+</div>
+  
+<div class="row-col-md-6 custyle">
+<table class="table table-striped custab">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Date of Birth</th>
+      <th>Skills</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of this.emp">
+      <td>{{x.employee_name}}</td>
+      <td>{{x.employee_email}}</td>
+      <td>{{x.employee_dob}}</td>
+      <td>{{x.employee_skills}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+</div>
